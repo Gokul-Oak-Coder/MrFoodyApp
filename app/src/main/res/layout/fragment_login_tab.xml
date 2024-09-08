@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.LoginTabFragment"
+    android:id="@+id/constraintLayout">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/textInputLayout"
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="32dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginEnd="32dp"
+       android:hint="Email Id"
+       app:errorEnabled="true"
+       app:endIconMode="clear_text"
+       app:endIconTint="@color/my_red"
+       app:helperTextTextColor="@color/my_red"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:startIconDrawable="@drawable/person"
+       app:startIconTint="@color/my_red">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/textInputEditText"
+          android:layout_width="match_parent"
+          android:inputType="none"
+          android:layout_height="wrap_content" />
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/textInputLayout2"
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="32dp"
+       android:layout_marginEnd="32dp"
+       android:hint="Password"
+       app:passwordToggleTint="@color/my_red"
+       app:passwordToggleEnabled="true"
+       app:errorEnabled="true"
+       app:helperTextTextColor="@color/my_red"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+       app:startIconDrawable="@drawable/pass"
+       app:startIconTint="@color/my_red">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/textInputEditText2"
+          android:layout_width="match_parent"
+          android:inputType="textPassword"
+          android:layout_height="wrap_content" />
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <LinearLayout
+       android:id="@+id/forgetPassword"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       android:gravity="center"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Forget Password? "
+          app:layout_constraintEnd_toStartOf="@+id/resetPassword"
+          app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+      <TextView
+          android:id="@+id/resetPassword"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="35dp"
+          android:text="Reset Here"
+          android:textStyle="bold"
+          android:textSize="16sp"
+          android:textColor="@color/my_red"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+   </LinearLayout>
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/loginBtn"
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:layout_marginStart="50dp"
+       android:layout_marginTop="70dp"
+       android:layout_marginEnd="50dp"
+       android:background="@drawable/shape_button"
+       android:text="Log In"
+       android:textColor="@color/white"
+       android:textSize="15sp"
+       android:textStyle="bold"
+       android:textAllCaps="false"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+   <TextView
+       android:id="@+id/or"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:text="Or"
+       android:layout_marginTop="20dp"
+       android:textColor="@color/my_red"
+       android:textSize="16sp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+   <LinearLayout
+       android:id="@+id/lLayoutSignup"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/or">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Don't have account? " />
+
+      <TextView
+          android:id="@+id/signUp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="SignUp"
+          android:textSize="16sp"
+          android:textColor="@color/my_red"
+          android:textStyle="bold" />
+   </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

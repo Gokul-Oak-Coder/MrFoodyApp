@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mr_FoodyNewKotlin" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryDark">@color/my_red</item>
+    </style>
+
+    <style name="Theme.Mr_FoodyNewKotlin" parent="Base.Theme.Mr_FoodyNewKotlin" />
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@drawable/tab_background</item>
+        <item name="tabTextColor">#FFFFFF</item> <!-- Color for unselected tabs -->
+        <item name="tabSelectedTextColor">#FF0000</item> <!-- Color for selected tabs -->
+    </style>
+
+    <style name="MyTheme" parent="Theme.MaterialComponents">
+
+    </style>
+
+<!--        <style name="BottomSheetDialogTheme" parent="Theme.AppCompat.Light.Dialog">-->
+<!--            <item name="android:windowMinWidthMajor">100%</item>-->
+<!--            <item name="android:windowMinWidthMinor">100%</item>-->
+<!--            <item name="android:windowBackground">@android:color/transparent</item>-->
+<!--            <item name="android:windowAnimations">@style/BottomSheetAnimation</item>-->
+<!--        </style>-->
+
+<!--        <style name="BottomSheetAnimation">-->
+<!--            <item name="android:windowEnterAnimation">@anim/slide_up</item>-->
+<!--            <item name="android:windowExitAnimation">@anim/slide_down</item>-->
+<!--        </style>-->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+</resources>

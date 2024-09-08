@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    &lt;!&ndash; Selected Tab &ndash;&gt;-->
+<!--    <item android:state_selected="true">-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <solid android:color="#FF0000"/> &lt;!&ndash; Red color for selected tab &ndash;&gt;-->
+<!--            <corners android:radius="16dp"/> &lt;!&ndash; Rounded corners &ndash;&gt;-->
+<!--            <stroke-->
+<!--                android:width="2dp"-->
+<!--                android:color="#000000"/> &lt;!&ndash; Black stroke &ndash;&gt;-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--    &lt;!&ndash; Default Tab &ndash;&gt;-->
+<!--    <item>-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <gradient-->
+<!--                android:startColor="#000000" android:endColor="#FF0000"-->
+<!--            android:angle="0"/> &lt;!&ndash; Gradient direction &ndash;&gt;-->
+<!--            <corners android:radius="16dp"/> &lt;!&ndash; Rounded corners &ndash;&gt;-->
+<!--            <stroke-->
+<!--                android:width="2dp"-->
+<!--                android:color="#000000"/> &lt;!&ndash; Black stroke &ndash;&gt;-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--</selector>-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_selected="true">
+    <shape>
+        <gradient
+            android:angle="90"
+            android:startColor="@color/black"
+            android:endColor="@color/my_red"/>
+        <corners
+            android:radius="20dp"/>
+    </shape>
+</item>
+
+<item>
+    <shape>
+        <gradient
+            android:angle="90"
+            android:startColor="@color/white"
+            android:endColor="@color/white"/>
+        <corners
+            android:radius="20dp"/>
+        <stroke
+            android:width="1dp"
+            android:color="@color/black"/>
+    </shape>
+</item>
+</selector>
